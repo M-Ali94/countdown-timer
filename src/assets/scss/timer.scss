@@ -1,0 +1,76 @@
+.timer-container {
+    background-color: #050d21;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(#{$gap} * 2);
+    position: relative;
+    padding: 20px;
+}
+
+.remove-timer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #c62b2b;
+    color: white;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.2em;
+
+    &:hover {
+        background-color: #999;
+    }
+}
+
+.timer-title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.time-value {
+    font-family: 'Digital Numbers Regular';
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    font-size: 2em;
+    margin: 0 0.3em;
+    color: #70fbf0;
+}
+
+.time-value-shadow {
+    position: absolute;
+    opacity: 0.15;
+}
+
+.time-countdown {
+    display: flex;
+}
+
+.time-value-unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-unit {
+    color: white;
+    font-weight: bold;
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.many-days {
+    position: absolute;
+    left: -0.8em;
+}

@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+input[type=text], input[type=datetime-local], select {
+    border: 1px solid #050d21;
+    border-radius: 0.4rem;
+    padding: 0 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: calc(#{$gap} * 2);
+}
+
+input[type=datetime-local], select {
+    cursor: pointer;
+}
+
+.checkbox-label {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(#{$gap} * 2);
+    background-color: #eee;
+    border-radius: 0.4rem;
+    padding: 0 15px;
+    cursor: pointer;
+
+    &:hover, &.selected {
+        background-color: #ddd;
+    }
+
+    input[type=checkbox] {
+        margin-right: 10px;
+    }
+}
+
+button {
+    height: 40px;
+    border-radius: 0.4rem;
+    padding: 0 15px;
+    width: 100%;
+    background-color: #2aa49a;
+    color: white;
+    margin-bottom: calc(#{$gap} * 2);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1d7d75;
+    }
+}
+
+.create-new-timer-form {
+    background-color: #eee;
+    border-radius: 0.8rem;
+    margin-bottom: calc(#{$gap} * 2);
+    padding: 20px 30px 0;
+
+    .row {
+        align-items: flex-end;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}

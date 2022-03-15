@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    padding: 0 $gap;
+    margin: auto;
+
+    @each $name, $value in $breakpoints {
+        @media (min-width: #{$value}px) {
+            width: #{$value}px;
+        }
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 $gap;
+}
+
+.row {
+    margin-left: -$gap;
+    margin-right: -$gap;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding-left: $gap;
+    padding-right: $gap;
+}
+
+@for $i from 1 through 12 {
+    .col-xs-#{$i} {
+        width: calc(100% / 12 * #{$i});
+    }
+}
+
+@each $name, $value in $breakpoints {
+    @for $i from 1 through 12 {
+        @media (min-width: #{$value}px) {
+            .col-#{$name}-#{$i} {
+                width: calc(100% / 12 * #{$i});
+            }
+        }
+    }
+}
+
+
